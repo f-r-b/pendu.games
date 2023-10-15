@@ -112,17 +112,6 @@ h1 {
 /* Medium devices (landscape tablets) */
 @media (min-width: 768px) and (max-width: 991px) {
     /* Styles for medium screens */
-}
-
-/* Large devices (desktops) */
-@media (min-width: 992px) and (max-width: 1199px) {
-    /* Styles for large screens */
-}
-
-/* Extra large devices (large desktops and beyond) */
-@media (min-width: 1200px) {
-    /* Styles for extra large screens */
-}
 body {
     background: black;
 }
@@ -224,4 +213,16 @@ h1 {
     background: white;
     left: 0;
     right: 0;
+}
+
+}
+
+/* Large devices (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Styles for large screens */
+}
+
+/* Extra large devices (large desktops and beyond) */
+@media (min-width: 1200px) {
+    /* Styles for extra large screens */
 }
