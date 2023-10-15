@@ -1,10 +1,10 @@
 const playButton = document.getElementById("playButton");
 const game = document.getElementById("game");
 
-playButton.addEventListener("click", () => {
+playButton.addEventListener("click", function playGame() => {
     playButton.style.display = "none"; 
     game.style.display = "block";
-function playGame() {
+    
     const userInput = prompt("Entrez le mot à deviner:");
 
     if (/^[a-zA-Z\s]*$/.test(userInput)) {
