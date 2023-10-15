@@ -22,6 +22,30 @@ body {
     margin: 0 auto;
     width: 600px;
 }
+#gameOptions {
+    align-items: center;
+}
+
+#solitaireButton {
+    width: 80px; 
+    height: 20px; 
+    background: lightblue;
+    color: white;
+    font-family: 'Space Mono', monospace;
+    border-color: cyan;
+    border-radius: 10px;
+}
+
+#multiplayerButton {
+    width: 80px; 
+    height: 20px; 
+    background: purple;
+    color: white;
+    font-family: 'Space Mono', monospace;
+    border-color: pink;
+    border-radius: 10px;
+}
+
 h1 {
     font-family: 'Creepster', cursive;
     color: red;
