@@ -1,6 +1,22 @@
+const gameOptions = document.getElementById("gameOptions");
+const solitaireButton = document.getElementById("solitaireButton");
+const multiplayerButton = document.getElementById("multiplayerButton");
 const playButton = document.getElementById("playButton");
 const game = document.getElementById("game");
 
+solitaireButton.addEventListener("click", () => {
+    gameOptions.style.display = "none";
+    game.style.display = "block";
+
+    startSolitaireMode();
+});
+
+multiplayerButton.addEventListener("click", () => {
+    gameOptions.style.display = "none"; 
+    game.style.display = "block"; 
+
+    startMultiplayerMode();
+});
 playButton.addEventListener("click", () => {
     playButton.style.display = "none"; 
     game.style.display = "block";
