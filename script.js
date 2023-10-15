@@ -111,7 +111,6 @@ function startSolitaireMode() {
         });
     });
 }
-};
 
 function generateWordAndHint() {
     const wordsAndHints = [
