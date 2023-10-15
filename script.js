@@ -89,7 +89,7 @@ function startMultiplayerMode() {
                 if (word.includes(guessedLetter)) {
                     letter.classList.add("correct");
                 } else {
-                    letter.classList add("incorrect");
+                    letter.classList.add("incorrect");
                     incorrectAttempts++;
                 }
 
