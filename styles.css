@@ -1,0 +1,50 @@
+body {
+    background: black;
+}
+
+h1 {
+    font-family: 'Creepster', cursive;
+    color: red;
+    font-size: 100px;
+    text-align: center;
+}
+
+.letter {
+    font-family: 'Space Mono', monospace;
+    color: white;
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.letters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.word-display {
+    font-family: 'Space Mono', monospace;
+    display: flex;
+    color: yellow;
+    justify-content: center;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
+.result {
+    font-family: 'Space Mono', monospace;
+    position: fixed;
+    color: black;
+    text-align: center;
+    margin-top: 15px;
+    background: white;
+    left: 0;
+    right: 0;
+}
