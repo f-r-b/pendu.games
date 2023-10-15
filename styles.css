@@ -23,11 +23,17 @@ body {
     width: 600px;
 }
 #gameOptions {
-    align-items: center;
+  text-align: center;
 }
 
+#gameOptions button {
+  display: block; 
+  margin: 0 auto; 
+}
+
+
 #solitaireButton {
-    width: 80px; 
+    width: auto; 
     height: 20px; 
     background: lightblue;
     color: white;
