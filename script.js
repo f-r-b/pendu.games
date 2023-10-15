@@ -45,7 +45,7 @@ playButton.addEventListener("click", () => {
             }
         });
     });
-} else if (userInput.length === 0 || userInput.includes(' ') || userInput.indexOf(' ') !== -1) {
+} else if (userInput.trim() === "") {
     alert('Le mot contient un espace ou est vide !');
 } else {
     alert('Le mot contient des caractères non autorisés.');
