@@ -27,13 +27,13 @@ body {
 }
 
 #gameOptions button {
-  display: block; 
+  display: inline-block; 
   margin: 0 auto; 
 }
 
 
 #solitaireButton {
-    width: auto; 
+    width: auto;
     height: 20px; 
     background: lightblue;
     color: white;
@@ -43,7 +43,7 @@ body {
 }
 
 #multiplayerButton {
-    width: 80px; 
+    width: auto;
     height: 20px; 
     background: purple;
     color: white;
