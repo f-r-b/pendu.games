@@ -1,3 +1,99 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+   
+    body {
+        background: black;
+    }
+    .play-button {
+        width: 200px;
+        height: 80px;
+        background: red;
+        color: white;
+        font-family: 'Space Mono', monospace;
+        font-size: 20px;
+        border-color: yellow;
+        border-radius: 15px;
+        display: block;
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .logo {
+        display: block;
+        margin: 0 auto;
+        width: 600px;
+    }
+    #gameOptions {
+        text-align: center;
+    }
+    #gameOptions button {
+        display: inline-block;
+        margin: 0 auto;
+    }
+    #solitaireButton {
+        width: auto;
+        height: 20px;
+        background: lightblue;
+        color: white;
+        font-family: 'Space Mono', monospace;
+        border-color: cyan;
+        border-radius: 10px;
+    }
+    #multiplayerButton {
+        width: auto;
+        height: 20px;
+        background: purple;
+        color: white;
+        font-family: 'Space Mono', monospace;
+        border-color: pink;
+        border-radius: 10px;
+    }
+    h1 {
+        font-family: 'Creepster', cursive;
+        color: red;
+        font-size: 100px;
+        text-align: center;
+    }
+    .letter {
+        font-family: 'Space Mono', monospace;
+        color: white;
+        display: inline-block;
+        margin: 5px;
+        cursor: pointer;
+    }
+    .letters {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .game {
+        display: none;
+    }
+    .word-display {
+        font-family: 'Space Mono', monospace;
+        display: flex;
+        color: yellow;
+        justify-content: center;
+    }
+    .correct {
+        color: green;
+    }
+    .incorrect {
+        color: red;
+    }
+    .result {
+        font-family: 'Space Mono', monospace;
+        position: fixed;
+        color: black;
+        text-align: center;
+        margin-top: 15px;
+        background: white;
+        left: 0;
+        right: 0;
+    }
+}
+
 @media (max-width: 575px) {
 body {
     background: black;
