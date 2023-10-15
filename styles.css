@@ -26,7 +26,9 @@ h1 {
     justify-content: center;
     margin-bottom: 50px;
 }
-
+.game {
+    display: none;
+}
 .word-display {
     font-family: 'Space Mono', monospace;
     display: flex;
