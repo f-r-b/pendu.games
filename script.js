@@ -4,27 +4,26 @@ const game = document.getElementById("game");
 playButton.addEventListener("click", () => {
     playButton.style.display = "none"; 
     game.style.display = "block";
-    
-});
-const userInput = prompt("Entrez le mot à deviner:");
 
-if (/^[a-zA-Z\s]*$/.test(userInput)) {
-    const wordDisplay = document.getElementById("wordDisplay");
-    const gameResult = document.getElementById("gameResult");
-    const word = userInput ? userInput.toUpperCase() : "";
-    wordDisplay.textContent = "_ ".repeat(word.length);
+    const userInput = prompt("Entrez le mot à deviner:");
 
-    const letters = document.querySelectorAll(".letter");
-    let incorrectAttempts = 0;
-    const maxAttempts = word.length * 2;
+    if (/^[a-zA-Z\s]*$/.test(userInput)) {
+       const wordDisplay = document.getElementById("wordDisplay");
+       const gameResult = document.getElementById("gameResult");
+       const word = userInput ? userInput.toUpperCase() : "";
+       wordDisplay.textContent = "_ ".repeat(word.length);
 
-    letters.forEach((letter) => {
-        letter.addEventListener("click", () => {
-            if (incorrectAttempts >= maxAttempts) {
+       const letters = document.querySelectorAll(".letter");
+       let incorrectAttempts = 0;
+       const maxAttempts = word.length * 2;
+
+        letters.forEach((letter) => {
+           letter.addEventListener("click", () => {
+              if (incorrectAttempts >= maxAttempts) {
                 return;
             }
-            const guessedLetter = letter.textContent;
-            if (word.includes(guessedLetter)) {
+              const guessedLetter = letter.textContent;
+              if (word.includes(guessedLetter)) {
                 letter.classList.add("correct");
             } else {
                 letter.classList.add("incorrect");
@@ -50,4 +49,6 @@ if (/^[a-zA-Z\s]*$/.test(userInput)) {
     alert('Le mot contient un espace ou est vide !');
 } else {
     alert('Le mot contient des caractères non autorisés.');
-}
+} 
+
+}); 
