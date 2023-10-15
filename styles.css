@@ -1,6 +1,22 @@
 body {
     background: black;
 }
+.play-button {
+    width: 200px; 
+    height: 80px; 
+    background: red;
+    color: white;
+    font-family: 'Space Mono', monospace;
+    font-size: 20px;
+    border-color: yellow;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .logo {
     display: block;
     margin: 0 auto;
