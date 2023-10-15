@@ -1,7 +1,7 @@
 const playButton = document.getElementById("playButton");
 const game = document.getElementById("game");
 
-playButton.addEventListener("click", function playGame() => {
+playButton.addEventListener("click", () => {
     playButton.style.display = "none"; 
     game.style.display = "block";
     
@@ -49,7 +49,5 @@ playButton.addEventListener("click", function playGame() => {
     alert('Le mot contient un espace ou est vide !');
 } else {
     alert('Le mot contient des caractères non autorisés.');
-    playGame()
 } 
-}
 }); 
