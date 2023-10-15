@@ -4,7 +4,7 @@ const game = document.getElementById("game");
 playButton.addEventListener("click", () => {
     playButton.style.display = "none"; 
     game.style.display = "block";
-
+function playGame() {
     const userInput = prompt("Entrez le mot à deviner:");
 
     if (/^[a-zA-Z\s]*$/.test(userInput)) {
@@ -49,6 +49,7 @@ playButton.addEventListener("click", () => {
     alert('Le mot contient un espace ou est vide !');
 } else {
     alert('Le mot contient des caractères non autorisés.');
+    playGame()
 } 
-
+}
 }); 
