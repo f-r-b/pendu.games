@@ -534,6 +534,7 @@ h1 {
 
 #playAgain {
     display: none;
+    margin: 0 auto;
     width: auto;
     height: 20px; 
     background: green;
