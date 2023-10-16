@@ -531,3 +531,14 @@ h1 {
 }
 
 }
+
+#playAgain {
+    display: none;
+    width: auto;
+    height: 20px; 
+    background: green;
+    color: white;
+    font-family: 'Space Mono', monospace;
+    border-color: lightpink;
+    border-radius: 10px;
+}
