@@ -161,7 +161,7 @@ h1 {
     font-family: 'Space Mono', monospace;
     color: white;
     display: inline-block;
-    font-size: 15px;
+    font-size: 12px;
     margin: 3px;
     cursor: pointer;
 }
@@ -169,7 +169,7 @@ h1 {
 .letters {
     display: flex;
     justify-content: center;
-    margin-top: 15px;
+    margin-top: 25px;
     margin-bottom: 25px;
 }
 .game {
