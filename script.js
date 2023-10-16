@@ -3,6 +3,7 @@ const solitaireButton = document.getElementById("solitaireButton");
 const multiplayerButton = document.getElementById("multiplayerButton");
 const playButton = document.getElementById("playButton");
 const game = document.getElementById("game");
+let errorCount = 0;
 
 solitaireButton.addEventListener("click", () => {
     multiplayerButton.style.display = "none";
@@ -48,6 +49,7 @@ function startSolitaireMode() {
             } else {
                 letter.classList.add("incorrect");
                 incorrectAttempts++;
+                errorCount++;
             }
 
             const wordArray = wordDisplay.textContent.split(" ");
@@ -59,7 +61,7 @@ function startSolitaireMode() {
             wordDisplay.textContent = wordArray.join(" ");
 
             if (wordDisplay.textContent.indexOf("_") === -1) {
-                gameResult.textContent = "Gagné!";
+                gameResult.textContent = `Gagné, avec ${errorCount} erreur(s)!`;
                 
                 resetLetters();
             } else if (incorrectAttempts >= maxAttempts) {
@@ -104,6 +106,7 @@ function startMultiplayerMode() {
                 } else {
                     letter.classList.add("incorrect");
                     incorrectAttempts++;
+                    errorCount++;
                 }
 
                 const wordArray = wordDisplay.textContent.split(" ");
@@ -115,7 +118,7 @@ function startMultiplayerMode() {
                 wordDisplay.textContent = wordArray.join(" ");
 
                 if (wordDisplay.textContent.indexOf("_") === -1) {
-                    gameResult.textContent = "Gagné!";
+                    gameResult.textContent = `Gagné, avec ${errorCount} erreur(s)!`;
                     
                     resetLetters();
                 } else if (incorrectAttempts >= maxAttempts) {
