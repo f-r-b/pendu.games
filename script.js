@@ -103,10 +103,12 @@ function startMultiplayerMode() {
                 const guessedLetter = letter.textContent;
                 if (word.includes(guessedLetter)) {
                     letter.classList.add("correct");
+                    gameOptions.style.display = "none";
                 } else {
                     letter.classList.add("incorrect");
                     incorrectAttempts++;
                     errorCount++;
+                    gameOptions.style.display = "none";
                 }
 
                 const wordArray = wordDisplay.textContent.split(" ");
@@ -119,10 +121,11 @@ function startMultiplayerMode() {
 
                 if (wordDisplay.textContent.indexOf("_") === -1) {
                     gameResult.textContent = `Gagné, avec ${errorCount} erreur(s)!`;
-                    
+                    gameOptions.style.display = "none";
                     resetLetters();
                 } else if (incorrectAttempts >= maxAttempts) {
                     gameResult.textContent = `Perdu! Le mot était : ${word}`;
+                    gameOptions.style.display = "none";
                     
                     resetLetters();
                 }
