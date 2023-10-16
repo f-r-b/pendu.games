@@ -62,17 +62,18 @@ function startSolitaireMode() {
             wordDisplay.textContent = wordArray.join(" ");
 
             if (wordDisplay.textContent.indexOf("_") === -1) {
-                letters.style.display = "none";
                 gameResult.textContent = `Gagné, avec ${errorCount} erreur(s)!`;
                 gameOptions.style.display = "none";
+                letters.style.display = "none";
                 playAgain.style.display = "block";
                 
                 resetLetters();
             } else if (incorrectAttempts >= maxAttempts) {
-                letters.style.display = "none";
                 gameResult.textContent = `Perdu! Le mot était : ${word}`;
                 playAgain.style.display = "block";
+                letters.style.display = "none";
                 gameOptions.style.display = "none";
+                
                 resetLetters();
             }
         });
@@ -124,10 +125,11 @@ function startMultiplayerMode() {
                 wordDisplay.textContent = wordArray.join(" ");
 
                 if (wordDisplay.textContent.indexOf("_") === -1) {
-                    letters.style.display = "none";
                     gameResult.textContent = `Gagné, avec ${errorCount} erreur(s)!`;
                     gameOptions.style.display = "none";
+                    letters.style.display = "none";
                     playAgain.style.display = "block";
+                    
                     resetLetters();
                 } else if (incorrectAttempts >= maxAttempts) {
                     letters.style.display = "none";
