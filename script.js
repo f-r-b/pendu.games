@@ -60,8 +60,12 @@ function startSolitaireMode() {
 
             if (wordDisplay.textContent.indexOf("_") === -1) {
                 gameResult.textContent = "Gagné!";
+                
+                resetLetters();
             } else if (incorrectAttempts >= maxAttempts) {
                 gameResult.textContent = `Perdu! Le mot était : ${word}`;
+
+                resetLetters();
             }
         });
     });
@@ -112,9 +116,11 @@ function startMultiplayerMode() {
 
                 if (wordDisplay.textContent.indexOf("_") === -1) {
                     gameResult.textContent = "Gagné!";
+                    
                     resetLetters();
                 } else if (incorrectAttempts >= maxAttempts) {
                     gameResult.textContent = `Perdu! Le mot était : ${word}`;
+                    
                     resetLetters();
                 }
             });
