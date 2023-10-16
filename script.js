@@ -112,8 +112,10 @@ function startMultiplayerMode() {
 
                 if (wordDisplay.textContent.indexOf("_") === -1) {
                     gameResult.textContent = "Gagné!";
+                    resetLetters();
                 } else if (incorrectAttempts >= maxAttempts) {
                     gameResult.textContent = `Perdu! Le mot était : ${word}`;
+                    resetLetters();
                 }
             });
         });
@@ -122,4 +124,12 @@ function startMultiplayerMode() {
     } else {
         alert('Le mot contient des caractères non autorisés.');
     }
+}
+function resetLetters() {
+    const letters = document.querySelectorAll(".letter");
+
+    letters.forEach((letter) => {
+        letter.classList.remove("correct");
+        letter.classList.remove("incorrect");
+    });
 }
