@@ -5,14 +5,14 @@ const playButton = document.getElementById("playButton");
 const game = document.getElementById("game");
 
 solitaireButton.addEventListener("click", () => {
-    gameOptions.style.display = "none";
+    multiplayerButton.style.display = "none";
     game.style.display = "block";
 
     startSolitaireMode();
 });
 
 multiplayerButton.addEventListener("click", () => {
-    gameOptions.style.display = "none"; 
+    solitaireButton.style.display = "none"; 
     game.style.display = "block"; 
 
     startMultiplayerMode();
