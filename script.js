@@ -64,14 +64,12 @@ function startSolitaireMode() {
             if (wordDisplay.textContent.indexOf("_") === -1) {
                 gameResult.textContent = `Gagné, avec ${errorCount} erreur(s)!`;
                 gameOptions.style.display = "none";
-                letters.style.display = "none";
                 playAgain.style.display = "block";
                 
                 resetLetters();
             } else if (incorrectAttempts >= maxAttempts) {
                 gameResult.textContent = `Perdu! Le mot était : ${word}`;
                 playAgain.style.display = "block";
-                letters.style.display = "none";
                 gameOptions.style.display = "none";
                 
                 resetLetters();
@@ -127,12 +125,10 @@ function startMultiplayerMode() {
                 if (wordDisplay.textContent.indexOf("_") === -1) {
                     gameResult.textContent = `Gagné, avec ${errorCount} erreur(s)!`;
                     gameOptions.style.display = "none";
-                    letters.style.display = "none";
                     playAgain.style.display = "block";
                     
                     resetLetters();
                 } else if (incorrectAttempts >= maxAttempts) {
-                    letters.style.display = "none";
                     gameResult.textContent = `Perdu! Le mot était : ${word}`;
                     gameOptions.style.display = "none";
                     playAgain.style.display = "block";
@@ -149,9 +145,10 @@ function startMultiplayerMode() {
 }
 function resetLetters() {
     const letters = document.querySelectorAll(".letter");
-
+    const alphabet = document.getElementById("alphabet")
     letters.forEach((letter) => {
         letter.classList.remove("correct");
         letter.classList.remove("incorrect");
+        alphabet.style.display = "none";
     });
 }
