@@ -152,3 +152,7 @@ function resetLetters() {
         alphabet.style.display = "none";
     });
 }
+
+playAgain.addEventListener("click", () => {
+    
+}); 
