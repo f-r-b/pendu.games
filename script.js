@@ -154,5 +154,5 @@ function resetLetters() {
 }
 
 playAgain.addEventListener("click", () => {
-    
+    alert("En cours de programmation");
 }); 
